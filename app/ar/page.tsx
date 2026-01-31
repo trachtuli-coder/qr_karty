@@ -11,7 +11,7 @@ export default function ARPage() {
   const [videoSrc, setVideoSrc] = useState<string | null>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number>(null);
 
   // Simulace detekce obrazu (v reálné aplikaci by zde bylo WebXR/AR.js)
   useEffect(() => {
